@@ -36,7 +36,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 
-vim.keymap.set("i", "<C-l>", "<left>")
+vim.keymap.set("i", "<C-l>", "<right>")
 vim.keymap.set("i", "<C-j>", "<Esc>o")
 vim.keymap.set("n", "<leader>bn", vim.cmd.bn)
 vim.keymap.set("n", "<leader>bp", vim.cmd.bp)
