@@ -32,3 +32,7 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 vim.opt.foldenable = false
+
+vim.opt.splitright = true
+
+vim.opt.mouse = ""

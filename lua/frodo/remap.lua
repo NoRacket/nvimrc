@@ -34,7 +34,8 @@ vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>zz")             -- error log
 -- vim.keymap.set("n", "<leader>j", "<cmd>lnext<CR>zz")
 -- vim.keymap.set("n", "<leader>k", "<cmd>lprev<CR>zz")
 
-vim.keymap.set("n", "<leader>ss", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gcI<Left><Left><Left><Left>]])
+vim.keymap.set("n", "<leader>si", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gcI<Left><Left><Left><Left>]])
+vim.keymap.set("n", "<leader>ss", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader><leader>", function()
@@ -58,3 +59,18 @@ vim.keymap.set("n", "<leader>bb", ":e %:h/")
 -- vim.keymap.set("i", "{<Cr>", "{<Cr>}<Esc>O<Tab>")
 
 vim.keymap.set("n", "<leader>m", "<cmd>:w<CR><cmd>make %<CR><cmd>copen<CR><C-w><C-w>")
+
+
+-- split stuff
+vim.keymap.set("n", "<C-w><C-s>", vim.cmd.vsplit)
+-- vim.keymap.set("n", "<Leader>ws", ":vsplit ")
+
+
+
+-- use ctrl+bs instead of ctrl+w
+vim.keymap.set("i", "<C-BS>", "<C-w>")
+
+
+-- easier to configure neovim
+vim.keymap.set("n", "<leader>rpp", "<cmd>e ~/.config/nvim/lua/frodo/remap.lua<CR>")
+
