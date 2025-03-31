@@ -6,7 +6,7 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.opt.expandtab = false
 
 vim.opt.smartindent = true
 
@@ -25,14 +25,17 @@ vim.opt.smartcase = true
 
 vim.opt.termguicolors = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 4
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "81"
 vim.opt.foldenable = false
 
 vim.opt.splitright = true
 
-vim.opt.mouse = ""
+vim.opt.mouse = "a"
+
+vim.opt.list = true
+vim.opt.listchars = "tab:~ ,trail:#,nbsp:+,lead:·"

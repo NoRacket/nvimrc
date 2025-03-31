@@ -49,14 +49,16 @@ vim.keymap.set("n", "<Esc>", vim.cmd.nohlsearch)
 vim.keymap.set("i", "<C-l>", "<right>")
 vim.keymap.set("i", "<C-j>", "<Esc>o")
 vim.keymap.set("i", "<C-k>", "<Esc>O")
-vim.keymap.set("i", "<C-h>", "<left>")
+-- vim.keymap.set("i", "<C-h>", "<left>")
 
 -- open files the old way (if you konow the name) / run through buffers.
 vim.keymap.set("n", "<leader>bn", vim.cmd.bn)
 vim.keymap.set("n", "<leader>bp", vim.cmd.bp)
 vim.keymap.set("n", "<leader>bd", vim.cmd.bd)
 vim.keymap.set("n", "<leader>bb", ":e %:h/")
--- vim.keymap.set("i", "{<Cr>", "{<Cr>}<Esc>O<Tab>")
+
+-- Expanding braces
+vim.keymap.set("i", "{<Cr>", "{<Cr>}<Esc>O<Tab>")
 
 vim.keymap.set("n", "<leader>m", "<cmd>:w<CR><cmd>make %<CR><cmd>copen<CR><C-w><C-w>")
 
@@ -65,12 +67,9 @@ vim.keymap.set("n", "<leader>m", "<cmd>:w<CR><cmd>make %<CR><cmd>copen<CR><C-w><
 vim.keymap.set("n", "<C-w><C-s>", vim.cmd.vsplit)
 -- vim.keymap.set("n", "<Leader>ws", ":vsplit ")
 
-
-
--- use ctrl+bs instead of ctrl+w
-vim.keymap.set("i", "<C-BS>", "<C-w>")
-
+-- esc via jk and kj
+vim.keymap.set("i", "jk", "<Esc>")
+vim.keymap.set("i", "kj", "<Esc>")
 
 -- easier to configure neovim
 vim.keymap.set("n", "<leader>rpp", "<cmd>e ~/.config/nvim/lua/frodo/remap.lua<CR>")
-
