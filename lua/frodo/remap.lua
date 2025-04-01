@@ -58,8 +58,9 @@ vim.keymap.set("n", "<leader>bd", vim.cmd.bd)
 vim.keymap.set("n", "<leader>bb", ":e %:h/")
 
 -- Expanding braces
-vim.keymap.set("i", "{<Cr>", "{<Cr>}<Esc>O<Tab>")
+vim.keymap.set("i", "{<Cr>", "{<Cr>}<Esc>O")
 
+vim.opt.makeprg = "buildTools/make.sh"
 vim.keymap.set("n", "<leader>m", "<cmd>:w<CR><cmd>make %<CR><cmd>copen<CR><C-w><C-w>")
 
 
