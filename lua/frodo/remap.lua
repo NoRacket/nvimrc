@@ -61,7 +61,7 @@ vim.keymap.set("n", "<leader>bb", ":e %:h/")
 vim.keymap.set("i", "{<Cr>", "{<Cr>}<Esc>O")
 
 vim.opt.makeprg = "buildTools/make.sh"
-vim.keymap.set("n", "<leader>m", "<cmd>:w<CR><cmd>make %<CR><cmd>copen<CR><C-w><C-w>")
+vim.keymap.set("n", "<leader>m", "<cmd>:wa<CR><cmd>make %<CR><cmd>copen<CR><C-w><C-w>")
 
 
 -- split stuff
